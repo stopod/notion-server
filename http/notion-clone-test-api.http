@@ -1,0 +1,27 @@
+POST http://localhost:5000/api/v1/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "hogefuga",
+    "password": "123456789",
+    "confirmPassword": "123456789"
+}
+
+###
+
+POST http://localhost:5000/api/v1/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "hogefuga",
+    "password": "123456789"
+}
+
+###
+
+POST http://localhost:5000/api/v1/vrify-token HTTP/1.1
+Content-Type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGJjNzgxMjdjMmI3Mjc1YzA2MWNmNSIsImlhdCI6MTY2NjI3ODYxNiwiZXhwIjoxNjY2MzY1MDE2fQ.ZPqc0xN9tsAjpH6vJenxosLwQIyLNzsIwyEEwml0KMo
+
+{
+}
